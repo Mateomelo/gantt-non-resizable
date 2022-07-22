@@ -140,7 +140,7 @@ export default class Bar {
             x: bar.getX() + 1,
             y: bar.getY() + 1,
             width: 0,
-            height: O,
+            height: 0,
             rx: this.corner_radius,
             ry: this.corner_radius,
             class: 'handle left',
