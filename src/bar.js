@@ -124,13 +124,12 @@ export default class Bar {
         if (this.invalid) return;
 
         const bar = this.$bar;
-        const handle_width = 8;
 
         createSVG('rect', {
             x: bar.getX() + bar.getWidth() - 9,
             y: bar.getY() + 1,
-            width: handle_width,
-            height: this.height - 2,
+            width: 0,
+            height: 0,
             rx: this.corner_radius,
             ry: this.corner_radius,
             class: 'handle right',
@@ -140,8 +139,8 @@ export default class Bar {
         createSVG('rect', {
             x: bar.getX() + 1,
             y: bar.getY() + 1,
-            width: handle_width,
-            height: this.height - 2,
+            width: 0,
+            height: O,
             rx: this.corner_radius,
             ry: this.corner_radius,
             class: 'handle left',
